@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Products</title>
+</head>
+<body>
+<h1> About the Products</h1>
+    {% for prod in products %}
+    <p>The product id is{{prod.product_id}}</p>
+    <p>The product name is{{prod.product_name}}</p>
+    <p>The product category is {{prod.category}}</p>
+    <p>The product sub_category is {{prod.sub_calegory}}</p>
+    <p>The price of the product is {{prod.price}}</p>
+    <img src="{{MEDIA_URL}}{{prod.image}}" alt="Nothing">
+
+    {% endfor %}
+
+</body>
+</html>
